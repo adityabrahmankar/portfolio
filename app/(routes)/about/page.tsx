@@ -5,9 +5,11 @@ import { useRouter } from "next/navigation";
 const About = () => {
     const router = useRouter();
 
-    return ( 
-        <h1 className="text-white">About</h1>
-     );
+    return (
+        <div className="bg-zinc-900 w-full h-full flex justify-center">
+            About
+        </div>
+    );
 }
- 
+
 export default About;
