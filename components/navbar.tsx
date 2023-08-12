@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="fixed flex flex-row bottom-0 left-0 right-0 z-20 px-3 py-4 bg-gray-500/10 items-center justify-around  text-white  backdrop-blur-sm ">
                 {MenuItems.map((item) => (
                     <Link href={item.href} key={item.title}>
-                        <item.icon className={`w-8 h-8 ${pathname === item.href ? "text-blue-500" : "text-muted-foreground"}`}  />
+                        <item.icon className={`w-8 h-8 ${pathname === item.href ? "text-muted" : "text-muted-foreground"}`}  />
                     </Link>
                 ))}
             </div>
