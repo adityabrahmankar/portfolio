@@ -1,7 +1,11 @@
 import { Separator } from "@/components/ui/separator";
 import ContactForm from "./components/ContactForm";
+import getContacts from "@/app/actions/getContacts";
 
-const ContactPage = () => {
+
+const ContactPage = async () => {
+
+  const contact = await getContacts();
 
   return (
     <div className="w-full h-full md:m-auto max-w-3xl p-4">
@@ -9,8 +13,17 @@ const ContactPage = () => {
         <div className="flex flex-row items-center justify-center text-2xl text-white ">
           Contact
         </div>
-        <Separator/>
-        <ContactForm/>
+        <Separator />
+        <ContactForm />
+      </div>
+      <div className="text-white flex space-x-5 mt-4">
+        {contact?.map((contact) => (
+          <div key={contact.id}>
+            <div>{contact.name}</div>
+            <div>{contact.email}</div>
+            <div>{contact.message}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-// import { table } from "@/lib/utils";
+import prisma from "@/lib/prismadb";
 
 export async function POST(req: Request){
     try {
@@ -10,7 +10,15 @@ export async function POST(req: Request){
             return new NextResponse("Missing fields", { status: 400 });
         }
 
-        return NextResponse.json(body);
+        const contact = await prisma.contact.create({
+            data: {
+                name,
+                email,
+                message
+            },
+        })
+
+        return new NextResponse("Success", { status: 200 });
 
     } catch (error) {
         console.log("CONTACT_FORM", error);

@@ -50,6 +50,7 @@ const ContactForm = () => {
             })
 
             router.refresh();
+            form.reset();
         } catch (error) {
             toast({
                 variant: "destructive",
