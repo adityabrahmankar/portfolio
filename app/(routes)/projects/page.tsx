@@ -1,14 +1,18 @@
 "use client";
 
-import { Avatar as AvatarComponent, AvatarImage as AvatarImageComponent } from "@/components/ui/avatar";
-import { BsDot } from 'react-icons/bs';
+import ProjectCard from "@/components/ProjectCard";
+import { projects } from "@/lib/constants";
 
-export default function Home() {
+export default function Projects() {
   return (
-    <div className="w-full h-full p-3 md:m-auto max-w-3xl">
-      <div className="flex flex-col items-start justify-center mt-20 ">
-        <div className="flex flex-row items-center justify-center space-x-2 text-2xl underline underline-offset-4 text-white p-4">
-          Projects
+    <div className="w-full h-full max-w-3xl p-3 md:m-auto">
+      <div className="flex flex-col items-start justify-center gap-6 sm:gap-10 px-3 mt-[60px] sm:mt-[100px] sm:px-6 pb-20">
+        <h1 className="text-3xl text-white">Projects</h1>
+        <div className="w-full h-[1px] bg-white rounded-full"></div>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
         </div>
       </div>
     </div>
