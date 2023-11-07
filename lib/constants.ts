@@ -1,5 +1,7 @@
 import {
+  FileText,
   GithubIcon,
+  Home,
   InstagramIcon,
   Laptop,
   LinkedinIcon,
@@ -7,23 +9,22 @@ import {
   TwitterIcon,
   YoutubeIcon,
 } from "lucide-react";
-import { PiFileText, PiHouse, PiLaptop, PiLink, PiPen } from "react-icons/pi";
 
 export const MenuItems = [
   {
     title: "Home",
     href: "/",
-    icon: PiHouse,
+    icon: Home,
   },
   {
     title: "Projects",
     href: "/projects",
-    icon: PiLaptop,
+    icon: Laptop,
   },
   {
     title: "About",
     href: "/about",
-    icon: PiFileText,
+    icon: FileText,
   },
   //   {
   //     title: "Contact",

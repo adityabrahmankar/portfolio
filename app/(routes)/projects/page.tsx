@@ -1,7 +1,12 @@
-"use client";
+import { Metadata } from "next";
 
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: "Projects | Aditya Brahmankar",
+  description: "Personal Portfolio of Aditya Brahmankar",
+};
 
 export default function Projects() {
   return (

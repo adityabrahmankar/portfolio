@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/avatar";
 import { Socials } from "@/lib/constants";
 import { motion } from "framer-motion";
-import { BsDot } from "react-icons/bs";
+import { Dot } from "lucide-react";
 
 export const Introduction = () => {
   return (
@@ -29,12 +29,12 @@ export const Introduction = () => {
             <div className="pl-2"> Aditya Brahmankar</div>
           </div>
           <div className="w-auto p-4 text-white">
-            I&apos;m Aditya a passionate developer living in Pune, India. My work spans
-            across multiple disciplines from full-stack development, to product
-            development.
+            I&apos;m Aditya a passionate developer living in Pune, India. My
+            work spans across multiple disciplines from full-stack development,
+            to product development.
           </div>
           <div className="flex flex-row items-center select-none text-muted-foreground/100">
-            <BsDot className="w-10 h-10 text-green-500 animate-pulse" />
+            <Dot className="w-10 h-10 text-green-500 animate-pulse" />
             Available for new opportunities
           </div>
         </div>
@@ -44,7 +44,6 @@ export const Introduction = () => {
           ))}
         </div>
         <div className="w-full h-[1px] bg-gradient-to-r from-zinc-900 via-white to-zinc-900  rounded-full"></div>
-
       </motion.div>
     </>
   );

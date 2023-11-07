@@ -1,4 +1,9 @@
-"use client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Aditya Brahmankar",
+  description: "Personal Portfolio of Aditya Brahmankar",
+};
 
 export default function About() {
   return (
