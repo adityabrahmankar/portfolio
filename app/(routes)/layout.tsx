@@ -1,15 +1,20 @@
-"use client";
-
 import Navbar from "@/components/navbar";
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
-import { Next13ProgressBar } from "next13-progressbar";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
+export const metadata: Metadata = {
+  title: "Aditya Brahmankar",
+  description: "Personal Portfolio of Aditya Brahmankar",
+  metadataBase: new URL("https://adityab-portfolio.vercel.app/"),
+  openGraph: {
+    images: "opengraph-image.png"
+  }
+};
 
 export default function RootLayout({
   children,
@@ -24,14 +29,7 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <Next13ProgressBar
-          height="3px"
-          color="#fff"
-          startPosition={0.5}
-          stopDelayMs={200}
-          showOnShallow
-          options={{ showSpinner: false }}
-        />
+        <NextTopLoader color="#fff" crawl height={2} showSpinner={false} />
         <Navbar />
         {children}
       </body>
