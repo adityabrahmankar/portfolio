@@ -5,17 +5,19 @@ import { ArrowUpRight, Laptop } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Tags from "./Tags";
 
-interface ProjectCardProps {
+interface ProjectDetailsCardProps {
   project: {
     title: string;
     description: string;
     imageURL?: string;
     href?: string;
+    tech?: string[];
   };
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectDetailsCard = ({ project }: ProjectDetailsCardProps) => {
   const router = useRouter();
   return (
     <>
@@ -25,10 +27,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="flex flex-col w-full gap-2 p-3 text-white rounded-md select-none bg-gray-700/10"
-        onClick={() => router.push(`/projects/${project.title}`)}
       >
         <h2 className="text-2xl font-semibold">{project.title}</h2>
-        <p className="text-muted-foreground">{project.description.split('.')[0]}</p>
+        <p className="text-muted-foreground">{project.description}</p>
         <div className="w-full max-h-[500px] p-3">
           {project.imageURL ? (
             <Image
@@ -54,9 +55,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             Currently working <Laptop className="text-muted-foreground" />
           </div>
         )}
+        <div className="w-full h-[1px] bg-gradient-to-r from-zinc-900 via-white to-zinc-900  rounded-full"></div>
+        <h2 className="text-xl font-semibold">Tech</h2>
+        <div className="flex flex-row flex-wrap items-center justify-center w-full gap-3">
+          {project.tech?.map((tech) => (
+            <Tags key={tech} name={tech} />
+          ))}
+        </div>
       </motion.div>
     </>
   );
 };
 
-export default ProjectCard;
+export default ProjectDetailsCard;

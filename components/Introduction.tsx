@@ -8,8 +8,10 @@ import {
 import { Socials } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { Dot } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export const Introduction = () => {
+  const router = useRouter();
   return (
     <>
       <motion.div
@@ -31,10 +33,16 @@ export const Introduction = () => {
           <div className="w-auto p-4 text-white">
             I&apos;m Aditya a passionate developer living in Pune, India. My
             work spans across multiple disciplines from full-stack development,
-            to product development.
+            to product development.{" "}
+            <span
+              className="cursor-pointer text-muted-foreground/80"
+              onClick={() => router.push("/projects")}
+            >
+              view
+            </span>
           </div>
           <div className="flex flex-row items-center select-none text-muted-foreground/100">
-            <Dot className="w-10 h-10 text-green-500 animate-pulse" />
+            <Dot className="text-green-500 h-14 w-14 animate-pulse brightness-200" />
             Available for new opportunities
           </div>
         </div>
