@@ -18,7 +18,7 @@ export const Introduction = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col w-full h-full max-w-3xl gap-6 p-3 md:m-auto"
+        className="flex flex-col w-full h-full max-w-3xl gap-6 p-3 pb-20 md:m-auto"
       >
         <span className="mt-[60px] sm:mt-[100px] w-full flex items-center justify-center text-2xl sm:text-3xl font-semibold text-gray-200 ">
           Hey! 👋
