@@ -2,8 +2,9 @@
 
 import { Socials } from "@/lib/constants";
 import { motion } from "framer-motion";
-import React from "react";
+import { File } from "lucide-react";
 import SocialButton from "./SocialButton";
+
 
 type Props = {};
 
@@ -31,6 +32,10 @@ const AboutMe = (props: Props) => {
         {Socials.map((social) => (
           <SocialButton key={social.name} socials={social} />
         ))}
+        <div className="flex flex-row items-center gap-3 px-4 py-2 text-white rounded-full cursor-pointer select-none bg-black/20 w-fit" onClick={() => window.open("/resume.pdf", "_blank", "noopener noreferrer")}>
+            <File size={18} />
+            Resume
+          </div>
       </div>
     </motion.div>
   );
