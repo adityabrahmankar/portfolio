@@ -1,4 +1,5 @@
 import {
+  Code,
   FileText,
   GithubIcon,
   Home,
@@ -26,11 +27,11 @@ export const MenuItems = [
     href: "/about",
     icon: FileText,
   },
-  //   {
-  //     title: "Contact",
-  //     href: "/contact",
-  //     icon: PiLink,
-  //   },
+  {
+    title: "Snippets",
+    href: "/snippets",
+    icon: Code,
+  },
 ];
 
 export const projects = [
@@ -90,7 +91,7 @@ export const projects = [
     title: "Lawbot AI",
     description: "The fastest AI Powered legal answers",
     imageURL: "/lawbot.png",
-    href: "https://www.quizoai.com",
+    // href: "https://www.quizoai.com",
     tech: [
       "HTML ",
       "JS",
