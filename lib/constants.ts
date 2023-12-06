@@ -169,11 +169,11 @@ export const Socials = [
   },
 ];
 
-export const snippets = [
-  {
-    title: "Crypt Text",
-    description: "A component rendering cryptographic text",
-    component: CryptText,
-  },
+// export const snippets = [
+//   {
+//     title: "Crypt Text",
+//     description: "A component rendering cryptographic text",
+//     component: CryptText,
+//   },
 
-];
+// ];
