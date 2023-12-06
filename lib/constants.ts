@@ -29,11 +29,11 @@ export const MenuItems = [
     href: "/about",
     icon: FileText,
   },
-  // {
-  //   title: "Snippets",
-  //   href: "/snippets",
-  //   icon: Code,
-  // },
+  {
+    title: "Snippets",
+    href: "/snippets",
+    icon: Code,
+  },
 ];
 
 export const projects = [
@@ -169,11 +169,11 @@ export const Socials = [
   },
 ];
 
-// export const snippets = [
-//   {
-//     title: "Crypt Text",
-//     description: "A component rendering cryptographic text",
-//     component: CryptText,
-//   },
+export const snippets = [
+  {
+    title: "Crypt Text",
+    description: "A component rendering cryptographic text",
+    component: CryptText,
+  },
 
-// ];
+];

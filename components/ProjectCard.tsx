@@ -20,19 +20,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <>
       <motion.div
-        key={project.title}
+        key={project?.title}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="flex flex-col w-full gap-2 p-3 text-white rounded-md select-none bg-gray-700/10"
         onClick={() => router.push(`/projects/${project.title}`)}
       >
-        <h2 className="text-2xl font-semibold">{project.title}</h2>
-        <p className="text-muted-foreground">{project.description.split('.')[0]}</p>
+        <h2 className="text-2xl font-semibold">{project?.title}</h2>
+        <p className="text-muted-foreground">{project?.description.split('.')[0]}</p>
         <div className="w-full max-h-[500px] p-3">
-          {project.imageURL ? (
+          {project?.imageURL ? (
             <Image
-              src={project.imageURL as string}
+              src={project?.imageURL as string}
               alt="project image"
               width={576}
               height={150}
@@ -42,9 +42,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <div className="w-full max-h-[500px] p-3 rounded-lg bg-zinc-900 h-[150px]"></div>
           )}
         </div>
-        {project.href ? (
+        {project?.href ? (
           <Link
-            href={project.href}
+            href={project?.href}
             className="flex px-4 py-2 rounded-lg bg-zinc-900 w-fit"
           >
             Visit <ArrowUpRight className="text-muted-foreground" />

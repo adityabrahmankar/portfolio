@@ -1,6 +1,7 @@
 "use client";
 
 import SocialButton from "@/components/SocialButton";
+import CryptText from "@/components/snippets/crypt-text";
 import {
   Avatar as AvatarComponent,
   AvatarImage as AvatarImageComponent,
@@ -18,10 +19,10 @@ export const Introduction = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col w-full h-full max-w-3xl gap-6 p-3 pb-20 md:m-auto"
+        className="flex flex-col w-full h-full max-w-3xl gap-6 p-3 "
       >
         <span className="mt-[60px] sm:mt-[100px] w-full flex items-center justify-center text-2xl sm:text-3xl font-semibold text-gray-200 ">
-          Hey! 👋
+          Hey !👋
         </span>
         <div className="flex flex-col items-start justify-center mt-3 rounded-lg bg-gray-700/10 ">
           <div className="flex flex-row items-center justify-center p-4 space-x-2 text-white">
