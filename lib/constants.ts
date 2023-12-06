@@ -1,3 +1,5 @@
+import ProjectCard from "@/components/ProjectCard";
+import CryptText from "@/components/snippets/crypt-text";
 import {
   Code,
   FileText,
@@ -27,11 +29,11 @@ export const MenuItems = [
     href: "/about",
     icon: FileText,
   },
-  {
-    title: "Snippets",
-    href: "/snippets",
-    icon: Code,
-  },
+  // {
+  //   title: "Snippets",
+  //   href: "/snippets",
+  //   icon: Code,
+  // },
 ];
 
 export const projects = [
@@ -165,4 +167,13 @@ export const Socials = [
     href: "https://latestinai.beehiiv.com/",
     icon: Newspaper,
   },
+];
+
+export const snippets = [
+  {
+    title: "Crypt Text",
+    description: "A component rendering cryptographic text",
+    component: CryptText,
+  },
+
 ];
