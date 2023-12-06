@@ -5,9 +5,11 @@ import Link from "next/link";
 import { MenuItems } from "@/lib/constants";
 import useMediaQuery from "@/lib/use-mediaquery";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState(MenuItems[0].href);
+  const pathname = usePathname()
+  const [activeTab, setActiveTab] = useState(pathname);
 
   const { isMobile } = useMediaQuery();
 
