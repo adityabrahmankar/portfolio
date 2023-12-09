@@ -21,7 +21,7 @@ const getRandomDecryption = (cryptText: string, index: number) => {
 };
 
 const CryptText: React.FC = ({}) => {
-  const cryptText = "Nothing is Permanent";
+  const cryptText = "It is only when you do, you realize you should've done it earlier";
   const [text, setText] = useState<string>(cryptText);
   const [isDecrypting, setIsDecrypting] = useState<boolean>(true);
   const [decryptIndex, setDecryptIndex] = useState<number>(0);
@@ -44,7 +44,7 @@ const CryptText: React.FC = ({}) => {
         setIsDecrypting(false);
         clearInterval(interval);
         setText(cryptText);
-      }, cryptText.length * 100);
+      }, cryptText.length * 40);
     }
 
     return () => clearInterval(interval);
@@ -53,16 +53,16 @@ const CryptText: React.FC = ({}) => {
   return (
     <div className="relative w-full ">
       <div
-        className="absolute top-0 right-0 items-center justify-end hidden gap-2 font-semibold w-fit sm:flex"
+        className="absolute bottom-0 right-0 items-center justify-end hidden gap-2 font-semibold w-fit sm:flex"
         onClick={handleReset}
       >
         <RotateCcw size={16} /> Reset
       </div>
       <div className="flex items-center justify-center overflow-hidden select-none">
         <div
-          className={cn("text-2xl text-gray-100 font-inter", font.className)}
+          className={cn("text-xl text-gray-100 font-inter  text-center ", font.className)}
         >
-          {text}
+          `{text}`
         </div>
       </div>
     </div>
