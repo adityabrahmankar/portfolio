@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import NextTopLoader from "nextjs-toploader";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <NextTopLoader color="#fff" crawl height={2} showSpinner={false} />
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
