@@ -1,12 +1,12 @@
 import Navbar from "@/components/navbar";
 import "../globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from 'geist/font/sans'
 import { cn } from "@/lib/utils";
 import NextTopLoader from "nextjs-toploader";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aditya Brahmankar",
@@ -27,13 +27,14 @@ export default function RootLayout({
       <body
         className={cn(
           "flex w-full justify-center bg-zinc-900 grainy ",
-          inter.className
+          GeistSans.className
         )}
       >
         <NextTopLoader color="#fff" crawl height={2} showSpinner={false} />
         <Navbar />
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
