@@ -27,7 +27,7 @@ export const Introduction = () => {
         <div className="flex flex-col items-start justify-center mt-3 rounded-lg bg-gray-700/10 ">
           <div className="flex flex-row items-center justify-center p-4 space-x-2 text-white">
             <AvatarComponent>
-              <AvatarImageComponent src="pic.png" />
+              <AvatarImageComponent src="https://utfs.io/f/5854434b-c65e-4fc9-a257-47c978eceff0-2dmy.png" />
             </AvatarComponent>
             <div className="pl-2"> Aditya Brahmankar</div>
           </div>

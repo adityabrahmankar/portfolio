@@ -35,7 +35,7 @@ const AboutMe = (props: Props) => {
           className="flex flex-row items-center gap-3 px-4 py-2 text-white rounded-full cursor-pointer select-none bg-black/20 w-fit"
           onClick={() => {
             const link = document.createElement("a");
-            link.href = "/resume.pdf";
+            link.href = "https://utfs.io/f/01cd57a1-bd9f-4c81-8844-e8ae2d5823c3-fgc05v.pdf";
             link.download = "Aditya Brahmankar resume.pdf";
             link.click();
           }}

@@ -41,7 +41,7 @@ export const projects = [
     title: "Posttrig AI",
     description:
       "The AI Powered Linkedin scheduling app let's you seamlessly create and schedule posts up to 1 month in advance. Stay organized with a visual calendar to manage your content. Unleash your creativity with AI-driven carousels. Elevate your LinkedIn presence effortlessly!",
-    imageURL: "/posttrig.png",
+    imageURL: "https://utfs.io/f/244499b5-10b0-4dde-95dd-c8dea55b3c83-cj9z24.png",
     // href: "https://www.quizoai.com",
     tech: [
       "Nextjs 14",
@@ -59,7 +59,7 @@ export const projects = [
     title: "Quizo AI",
     description:
       "The fastest AI Powered online quizing platform Quizo helps creating sharing and taking quizzes. Whether you want to have fun learn or grow your business.Quizo has a plan for you compare our plans and features and start your free trial today",
-    imageURL: "/quizo.png",
+    imageURL: "https://utfs.io/f/edcc52eb-e721-4aae-9403-27318a24ac2b-1s9pdm.png",
     href: "https://www.quizoai.com",
     tech: [
       "Nextjs 13",
@@ -76,7 +76,7 @@ export const projects = [
     title: "Studybuddy AI",
     description:
       "The fastest AI Powered online studying platform for CBSE students",
-    imageURL: "/studdybuddy.png",
+    imageURL: "https://utfs.io/f/1630f982-3b2e-4f1c-b81e-b6194af29f38-t7icv5.png",
     href: "https://studybuddy-gg.vercel.app",
     tech: [
       "Nextjs 13",
@@ -92,7 +92,7 @@ export const projects = [
   {
     title: "Lawbot AI",
     description: "The fastest AI Powered legal answers",
-    imageURL: "/lawbot.png",
+    imageURL: "https://utfs.io/f/29d2537d-e12e-47b4-9149-273935326830-icqqzf.png",
     // href: "https://www.quizoai.com",
     tech: [
       "HTML ",
@@ -109,7 +109,7 @@ export const projects = [
     title: "AICreators Bot",
     description:
       "AI Creators Bot is a WhatsApp chatbot that uses ChatGPT to provide personalized responses to users' queries. It can assist users in a variety of tasks, including email writing, recipe generation, yoga teaching, and storytelling. It is an easy and convenient way to stay informed and entertained while staying connected through WhatsApp.",
-    imageURL: "/bot.png",
+    imageURL: "https://utfs.io/f/d55aa826-5af8-4df8-8f4e-6113144e63b8-23ev.png",
     href: "https://aicreators.framer.website/",
     tech: ["OpenAI API", "WhatsApp", "No Code Tool"],
   },
@@ -117,7 +117,7 @@ export const projects = [
     title: "AICreators Directory",
     description:
       "Largest AI tools directory where you'll find comprehensive listings of the best AI tools for all your needs. We have categorized AI tools by industry, type, tool purpose and more to make it easier for you to find the right AI tools for your organization.",
-    imageURL: "/directory.png",
+    imageURL: "https://utfs.io/f/8f0407a0-3dac-46fa-a55b-349abd5db9f4-fx3jbn.png",
     href: "https://www.aicreators.co/",
     tech: ["Softr", "Airtable"],
   },
@@ -125,7 +125,7 @@ export const projects = [
     title: "ResourceHunt",
     description:
       "ResouceHunt is the ultimate destination for tech enthusiasts looking to stay up to date with the latest insights from the most influential figures in technology. Our platform showcases curated videos from the world's top tech personalites in the industry, including Elon Musk, Peter Thiel, Sam Altman and more.",
-    imageURL: "/resourcehunt.png",
+    imageURL: "https://utfs.io/f/8edce2bb-a834-439b-9880-c9d5c00cfb85-6chkrj.png",
     href: "https://resourcehunt.softr.app/",
     tech: ["Softr", "Airtable"],
   },
